@@ -1,15 +1,25 @@
 #! /bin/bash
 
-exit
-read -p "how old are you? " age
-if [ $age -ge 18 ]; then
-  echo "hi, welcome"
-elif [ $age -ge 15 ]; then
-  echo "quite good"
-else
-  echo "oh, sorry"
-fi
+echo "select an option..."
+echo "type 1 to Do A"
+echo "type 2 to Do B"
+echo "type 3 to Do C"
+echo "type 4 to Do D"
 
-echo "bye"
+read choice
+case $choice in
+  1)
+    echo "you choose A"
+    ;;
+  2)
+    echo "you choose B"
+    ;;
+  3)
+    echo "you choose C"
+    ;;
+  4)
+    echo "you choose A"
+    ;;
+esac
 
 # this is a comment
