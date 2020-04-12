@@ -1,25 +1,20 @@
 #! /bin/bash
 
-echo "select an option..."
-echo "type 1 to Do A"
-echo "type 2 to Do B"
-echo "type 3 to Do C"
-echo "type 4 to Do D"
+test_date(){
+  echo "test func"
+  date
+}
 
-read choice
-case $choice in
-  1)
-    echo "you choose A"
-    ;;
-  2)
-    echo "you choose B"
-    ;;
-  3)
-    echo "you choose C"
-    ;;
-  4)
-    echo "you choose A"
-    ;;
-esac
+hello2(){
+  echo "hello $1"
+  echo "hello also to $2"
+  return 12
+}
 
 # this is a comment
+
+test_date
+test_date
+
+hello2 "shou" "carol"
+echo "return $?"
