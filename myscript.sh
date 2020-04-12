@@ -1,15 +1,14 @@
 #! /bin/bash
 
-number1=10
-echo "$(( number1 += 10 ))"
-
-if [ $number1 -eq 20 ]; then
-  echo "this is true"
+read -p "how old are you? " age
+if [ $age -ge 18 ]; then
+  echo "hi, welcome"
+elif [ $age -ge 15 ]; then
+  echo "quite good"
+else
+  echo "oh, sorry"
 fi
 
-if [ $number1 -eq 30 ]; then
-  echo "this is false"
-fi
-
+echo "bye"
 
 # this is a comment
