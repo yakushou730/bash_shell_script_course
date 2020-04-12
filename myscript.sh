@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo hello this is my script
-echo bye bye !
-echo -------------
+read -p "What's yout name " yourname
+echo "hello, $yourname. Nice to meet you" 
+
 # this is a comment
